@@ -143,8 +143,8 @@ close all; format long
 data_list_perfusion_studies_20190807();
 
 % Processing parameters
-lb = 50;   % not used for the fit
-fit_spectra = 0;
+lb = 30;   % not used for the fit
+fit_spectra = 1;
 
 % Output parameters
 show_in_subplot = 0;
@@ -159,7 +159,7 @@ Nsubplotx = 1;
 Nsubploty = 1;
 Navg = 1;
 Nmove = 1;
-tend = 400;
+tend = 250;
 N_interval_waterplot = 5;
 xshift = 0.1;   % shift in chemical shifts
 yshift = -3e-2; % shift in y axis.
@@ -174,8 +174,8 @@ time_range = 30:120;    % time to average and plot.
 % main function
 
 
-for kk = 1:1
-kk = 1
+for kk = 9:9
+
     file = dir(path(kk).name);
     ii = 0;
     % for ii = numel(cohort):-1:1
